@@ -1,0 +1,39 @@
+﻿<Page x:Class="urok3.Pages.Klients"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:urok3.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Klients">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.ColumnSpan="3" Grid.RowSpan="7" HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Orientation="Horizontal">
+            <TextBox Name="Null" Width="450" Height="250" Text="Таблица" FontSize="50"/>
+        </StackPanel>
+        <Button Grid.Row="9" Name="btn2" Grid.ColumnSpan="3" Width="450" Height="50" Content="Удалить клиента" FontSize="30"/>
+        <TextBox Grid.Row="0" Grid.Column="3" Width="170" Height="30" Name="search" Text="Поиск" FontSize="20" />
+        <Button Grid.Column="4" Name="btn3" Width="100" Height="30" Content="Найти" FontSize="15"/>
+
+    </Grid>
+</Page>
